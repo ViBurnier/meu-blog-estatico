@@ -1,2 +1,2 @@
 # MyBlog
- FRONT-END, Blog estático com HTML, CSS e Js
+ Blog estático, Senac 2025
