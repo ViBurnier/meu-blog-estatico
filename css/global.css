@@ -53,7 +53,7 @@ header{
 }
 
 #inputSearch{
-    height: 25px;
+    height: 35px;
     width: 200px;
 
     border-radius: 10px;
@@ -61,7 +61,7 @@ header{
 }
 
 #submitSearch{
-    height: 25px;
+    height: 35px;
     width: 35px;
     border-radius: 5px;
     border: none;
