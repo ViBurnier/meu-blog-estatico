@@ -1,6 +1,7 @@
 /*template do site*/
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 /*@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');*/
 
 /*definicoes de estilo*/
@@ -8,6 +9,7 @@
     --fontstyle: roboto;
     --fontsize-main: 16px;
     --fontcolor: white;
+    --color-link: white;
 }
 
 *{
@@ -25,59 +27,112 @@ html, body, #wrap{
     font-family: var(--fontstyle);
 }
 
-#wrap{
-    display: flex;
-    flex-direction: column;
-}
-
-body{
-}
-
+/*HEADER*/
 header{
     font-size: 10px;
     color: var(--fontcolor);
-    background-color: #666464;
-    border: solid 3px #302f2f;
+    background-color: #3e5641;
     padding: 5px;
+}
 
+header form{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
+    padding: 5px;
+    background-color: #282b28;
 }
 
-#formSearch{
-    
-    
+header img{
+    display: block;
+    height: 4rem;
+    width: auto;
+    padding: 5px;
 }
 
-#inputSearch{
-    height: 35px;
-    width: 200px;
-
-    border-radius: 10px;
-    border: none;
+header div{
+    display: flex;
 }
 
-#submitSearch{
-    height: 35px;
-    width: 35px;
-    border-radius: 5px;
-    border: none;
-
+header h1{
+    margin-left: 30px;
+    font-size: 2rem;
+    font-family: "Jersey 15", serif;
 }
+/*HEADER*/
 
+/*NAV*/
 nav{
-    background-color:#d4e4f5;
+    display: flex;
+    background-color:#3e5641;
+    justify-content: start;
 }
 
+nav img{
+    width: 2rem;
+    height: 2rem;
+}
+
+nav a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+nav span{
+    margin-top: .5rem;
+}
+
+nav a:last-child{
+    margin-left:auto ;
+}
+/*NAV*/
+
+/*MAIN*/
 main{
-    background-color: #DCEDFF;
+    background-color: white;
     flex-grow: 1;
 }
+/*MAIN*/
+
 
 footer{
     background-color: #2c2c2c;
     color: #DCEDFF;
 }
+
+
+a{
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #535252;
+    
+}
+
+
+form input{
+    height: 35px;
+    padding: 15px;
+    border: none;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+#inputSearch{
+    display: flex;
+    flex-grow: 1;
+    border-radius: 10px 0px 0 10px;
+}
+
+#submitSearch{
+    border-radius: 0px 10px 10px 0px;
+    background-color: white;
+    border: none;
+}
+
