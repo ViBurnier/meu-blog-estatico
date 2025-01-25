@@ -80,26 +80,41 @@ function _(seletor) {
     return document.querySelectorAll(seletor);
 }
 
-function template(){
+function template() {
     return ` <!--HEADER-->
         <header>
+
             <div>
                 <a href="/"><img src="${site.logo}" alt="" srcset=""></a>
-                <h1>${site.titulo}</h1>
+                
+                <form action="https://www.google.com/search" method="get" id="formSearch">
+                    <input type="search" name="q" id="inputSearch" placeholder="Search">
+                    <button type="submit" id="submitSearch"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button>
+                </form>
+                
+                <a href="login.html" id="userAcao"><img src="img/user.png" alt="faça login" srcset=""></a>           
             </div>
-            <form action="https://www.google.com/search" method="get" id="formSearch">
-                <input type="search" name="q" id="inputSearch" placeholder="Search">
-                <button type="submit" id="submitSearch"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button>
-            </form>
+                
         </header>
         <!--HEADER-->
 
-        <nav>
-            <a href="/" title="inicio"><i class="fa-solid fa-house fa-fw"></i><span>inicio</span></a>
-            <a href="contatos.html" title="faça contato"><i class="fa-solid fa-comments fa-fw"></i><span>contatos</span></a>
-            <a href="sobre.html" title="Sobre o site"><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
-            <a href="login.html" id="userAcao"><img src="img/user.png" alt="faça login" srcset=""></a>           
-        </nav>
+            <nav class="navbar navbar-expand-lg">
+
+                <div class="container-fluid">
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a href="/" title="inicio"><i class="fa-solid fa-house fa-fw"></i><span>home</span></a>
+                            <a href="contatos.html" title="faça contato"><i class="fa-solid fa-comments fa-fw"></i><span>sac</span></a>
+                            <a href="info.html" title="Sobre o site"><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
+
+                        </div>
+                    </div>
+                 </div>
+
+            </nav>
 
         <main id="conteudo">
         </main>
@@ -111,5 +126,5 @@ function template(){
                 <div><a href="privacidade.html">Políticas de Privacidade</a></div>
             </div>
             <a href="#wrap" title="Ir para o inicio desta pagina"><i class="fa-regular fa-circle-up fa-fw"></i></a>
-        </footer>` 
+        </footer>`
 }

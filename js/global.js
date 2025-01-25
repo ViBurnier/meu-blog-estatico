@@ -15,7 +15,7 @@ window.onload = () => {
     var today = new Date();
     var year = today.getFullYear();
     if (year > site.ano) {
-        _('#footerYear').innerHTML = `( ${site.ano} . ${year} )`
+        _('#footerYear').innerHTML = `${site.ano} ${year}`
     }
     else {
         _('#footerYear').innerHTML = site.ano;
