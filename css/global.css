@@ -4,20 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 /*@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');*/
 
-/*definicoes de estilo*/
-:root{
+:root {
     --fontstyle: roboto;
     --fontsize-main: 16px;
     --fontcolor: white;
     --color-link: white;
 }
 
-*{
+* {
     box-sizing: border-box;
     outline: none;
 }
 
-html, body, #wrap{
+html,
+body,
+#wrap {
     position: relative;
     padding: 0;
     margin: 0;
@@ -27,7 +28,7 @@ html, body, #wrap{
     font-family: var(--fontstyle);
 }
 
-body{
+body {
     background-color: var(--cor-do-fundo);
     background-image: url('/img/circulo-azul-abstrato-na-tecnologia-de-fundo-preto_1142-9770.avif');
     background-repeat: repeat;
@@ -35,108 +36,101 @@ body{
     background-attachment: fixed;
 }
 
-
-
 /*HEADER*/
-header{
-    
+header {
     font-size: 10px;
     color: var(--fontcolor);
     background-color: #3e5641;
 }
 
-header form{
+header form {
     display: flex;
     padding: 0.3rem;
     background-color: #282b28;
 }
 
-#inputSearch{
+#inputSearch {
     flex-grow: 1;
-    border-radius: 10px 0px 0 10px;
+    border-radius: 10px 0 0 10px;
     height: 35px;
     padding: 15px;
     border: none;
 }
 
-#submitSearch{
-    border-radius: 0px 10px 10px 0px;
+#submitSearch {
+    border-radius: 0 10px 10px 0;
     background-color: white;
     border: none;
 }
 
-header img{
+header img {
     height: 4rem;
     width: auto;
     padding: 5px;
 }
 
-header div{
+header div {
     display: flex;
 }
 
-header h1{
+header h1 {
     margin-left: 30px;
     font-size: 2rem;
     font-family: "Jersey 15", serif;
 }
-/*HEADER*/
 
 /*NAV*/
-nav{
+nav {
     display: flex;
     justify-content: start;
-    background-color:#3e5641;
+    background-color: #3e5641;
 }
 
-nav img{
+nav img {
     width: 2rem;
     height: 2rem;
 }
 
-nav a{
+nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
 }
 
-nav span{
-    margin-top: .5rem;
+nav span {
+    margin-top: 0.5rem;
 }
 
-nav a:last-child{
-    margin-left:auto ;
+nav a:last-child {
+    margin-left: auto;
 }
-/*NAV*/
 
 /*MAIN*/
-main{
+main {
     background-color: white;
     flex-grow: 1;
 }
-/*MAIN*/
 
 /*FOOTER*/
-footer{
+footer {
     background-color: #2c2c2c;
     color: #DCEDFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-/*FOOTER*/
 
-a{
+a {
     color: var(--color-link);
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     background-color: #535252;
 }
 
-#wrap{
+#wrap {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -146,7 +140,6 @@ a:hover{
 
 /* Para larguras de 640px ou mais */
 @media screen and (min-width: 640px) {
-
     header {
         display: row;
         justify-content: space-between;
@@ -155,11 +148,10 @@ a:hover{
     header form {
         padding: 0.6rem;
     }
-
 }
 
+/* Para larguras de 425px ou mais */
 @media screen and (min-width: 425px) {
-
     nav img {
         height: 1.5rem;
         width: 1.5rem;
@@ -175,8 +167,6 @@ a:hover{
 
     nav span {
         margin-top: 0;
-        margin-left: .5rem;
+        margin-left: 0.5rem;
     }
 }
-
-

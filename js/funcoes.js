@@ -107,8 +107,7 @@ function template(){
         <footer>
             <a href="/" title="inicio"><i class="fa-solid fa-house fa-fw"></i></a>
             <div>
-                <i class="fa-regular fa-copyright fa-rotate-180 fa-fw"></i>
-                <span>2025 ${site.proprietario}</span>
+                ${site.licensa}
                 <div><a href="privacidade.html">Políticas de Privacidade</a></div>
             </div>
             <a href="#wrap" title="Ir para o inicio desta pagina"><i class="fa-regular fa-circle-up fa-fw"></i></a>
