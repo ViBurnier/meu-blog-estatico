@@ -12,6 +12,8 @@ window.onload = () => {
 
     //carrega o template HTMl em div#wrap
     _('#wrap').innerHTML = template();
+
+    
     var today = new Date();
     var year = today.getFullYear();
     if (year > site.ano) {
@@ -19,5 +21,15 @@ window.onload = () => {
     }
     else {
         _('#footerYear').innerHTML = site.ano;
+    }
+
+    //verifica o tamanho da tela do usuario 
+    var larguraJanela = window.innerWidth
+
+    if(larguraJanela < 425){
+        _('#campoDois').innerHTML = `${site.pesquisa}`
+    }
+    else{
+        _('#campoUm').innerHTML = `${site.pesquisa}`
     }
 }

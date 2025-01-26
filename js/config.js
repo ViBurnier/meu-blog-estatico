@@ -30,4 +30,9 @@ const site = {
     `<i class="fa-regular fa-copyright fa-rotate-180 fa-fw"></i>
     <span>Copyleft <span id="footerYear"></span> Burnier</span> 
     `,
+
+    pesquisa: ` <form action="https://www.google.com/search" method="get" id="formSearch">
+                    <input type="search" name="q" id="inputSearch" placeholder="Search">
+                    <button type="submit" id="submitSearch"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button>
+                </form>` ,
 }

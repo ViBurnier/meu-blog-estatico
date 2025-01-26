@@ -87,14 +87,14 @@ function template() {
             <div>
                 <a href="/"><img src="${site.logo}" alt="" srcset=""></a>
                 
-                <form action="https://www.google.com/search" method="get" id="formSearch">
-                    <input type="search" name="q" id="inputSearch" placeholder="Search">
-                    <button type="submit" id="submitSearch"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button>
-                </form>
+                <div id="campoUm"></div>
+                    
                 
                 <a href="login.html" id="userAcao"><img src="img/user.png" alt="faça login" srcset=""></a>           
             </div>
                 
+            <div id="campoDois"></div>
+
         </header>
         <!--HEADER-->
 
@@ -109,7 +109,6 @@ function template() {
                             <a href="/" title="inicio"><i class="fa-solid fa-house fa-fw"></i><span>home</span></a>
                             <a href="contatos.html" title="faça contato"><i class="fa-solid fa-comments fa-fw"></i><span>sac</span></a>
                             <a href="info.html" title="Sobre o site"><i class="fa-solid fa-circle-info fa-fw"></i><span>info</span></a>
-
                         </div>
                     </div>
                  </div>

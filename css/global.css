@@ -42,12 +42,12 @@ body {
 header {
     color: var(--fontcolor);
     background-color: var(--background);
+    
 }
 
 header form {
     display: flex;
-    padding: 0.3rem;
-    background-color: var(--backgroundTwo);
+    
 }
 
 #inputSearch {
@@ -55,30 +55,40 @@ header form {
     border-radius: 10px 0 0 10px;
     height: 35px;
     padding: 1rem;
-    border: none;
+    border-right: none;
+    border-bottom: 2px solid var(--backgroundTwo);
+    border-top: 2px solid var(--backgroundTwo);
+    border-left: 2px solid var(--backgroundTwo);
+    
 }
 
 #submitSearch {
     border-radius: 0 10px 10px 0;
     background-color: white;
-    border: none;
+    border-left: none;
+    border-bottom: 2px solid var(--backgroundTwo);
+    border-top: 2px solid var(--backgroundTwo);
+    border-right: 2px solid var(--backgroundTwo);
+}
+
+
+#campoDois{
+    display: flex;
+    justify-content: center;
 }
 
 header img {
     height: 3rem;
     width: auto;
+   
 }
 
 header div {
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     justify-content: space-between;
-}
-
-header h1 {
-    margin-left: 30px;
-    font-size: 2rem;
-    font-family: "Jersey 15", serif;
 }
 
 /*NAV*/
@@ -93,13 +103,17 @@ nav i {
 }
 
 nav a {
-    padding: 1rem;
-    
+    padding: 1rem; 
 }
 
 nav span{
     display: flex;
     flex-direction: column;
+    
+}
+
+nav a:hover{
+    background-color: var(--backgroundlink);
 }
 
 
@@ -122,10 +136,7 @@ footer {
 a {
     color: var(--color-link);
     text-decoration: none;
-}
-
-a:hover {
-    background-color: var(--backgroundlink);
+    
 }
 
 #wrap {
