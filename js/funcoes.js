@@ -80,24 +80,31 @@ function _(seletor) {
     return document.querySelectorAll(seletor);
 }
 
+/**
+ * Login no firebase Authentication
+ */
+function fbSigIn(){
+    firebase.auth().signInWithPopup(provider);
+    /**
+     * Logout do firebase
+     */
+}
+
+function fbSignOut(){
+    firebase.auth().signOut()
+}
 function template() {
     return ` <!--HEADER-->
         <header>
 
             <div>
-                <a href="/"><img src="${site.logo}" alt="" srcset=""></a>
-                
-                <div id="campoUm"></div>
-                    
-                
-                <a href="login.html" id="userAcao"><img src="img/user.png" alt="faça login" srcset=""></a>           
-            </div>
-                
+                <a href="/"><img src="${site.logo}" alt="" srcset=""></a>               
+                <div id="campoUm"></div>               
+                <a href="login.html" id="userAcao" data-acao="login" title=""><img src="img/user.png" alt="faça login"  referrerpolicy="no-referrer" srcset=""></a>           
+            </div>                
             <div id="campoDois"></div>
-
         </header>
         <!--HEADER-->
-
             <nav class="navbar navbar-expand-lg">
 
                 <div class="container-fluid">
@@ -112,12 +119,9 @@ function template() {
                         </div>
                     </div>
                  </div>
-
             </nav>
-
         <main id="conteudo">
         </main>
-
         <footer>
             <a href="/" title="inicio"><i class="fa-solid fa-house fa-fw"></i></a>
             <div>
