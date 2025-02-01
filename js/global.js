@@ -34,6 +34,7 @@ window.onload = () => {
         }
         else {
             _('#userAcao img').src = 'img/user.png';//Mostra a foto do user no google
+            _('#userAcao').title = "Faça login"
             _('#userAcao').href = 'login.html'; // Troca o link ao clicar (inútil)
             _('#userAcao').setAttribute('data-acao', 'login'); // Troca o valor de `data-acao`
         }

@@ -1,0 +1,36 @@
+.fotoPerfil{
+    display: block;
+    margin: auto;
+    border: 0.2rem solid black;
+    border-radius: 0.2rem;
+    max-width: 50%;
+}
+
+.ulDados{
+    display: table;
+    margin: 2rem auto;
+    padding: 1rem;
+    
+}
+
+.verPerfil, .logout{
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    margin: auto;
+    width: 270px;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.verPerfil{
+    background-color: steelblue;
+    margin-bottom: 1rem;
+}
+
+.logout{
+    background-color: orangered;
+}

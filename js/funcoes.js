@@ -92,6 +92,8 @@ function fbSigIn(){
 
 function fbSignOut(){
     firebase.auth().signOut()
+
+    
 }
 function template() {
     return ` <!--HEADER-->
